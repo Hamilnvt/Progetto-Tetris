@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/Progetto_Tetris.dir/main.cpp.o -o Progetto_Tetris  -lcurses -lform 
