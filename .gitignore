@@ -1,3 +1,8 @@
+main
+CMakeCache.txt
+
+
+
 # Prerequisites
 *.d
 
@@ -6,9 +11,6 @@
 *.lo
 *.o
 *.obj
-
-main
-CMakeCache.txt
 
 # Precompiled Headers
 *.gch
