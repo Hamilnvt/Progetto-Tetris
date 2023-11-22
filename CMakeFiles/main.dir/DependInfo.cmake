@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mathieu/Git/Progetto-Tetris/Quadrato.cpp" "CMakeFiles/main.dir/Quadrato.cpp.o" "gcc" "CMakeFiles/main.dir/Quadrato.cpp.o.d"
+  "/home/mathieu/Git/Progetto-Tetris/Tetramino.cpp" "CMakeFiles/main.dir/Tetramino.cpp.o" "gcc" "CMakeFiles/main.dir/Tetramino.cpp.o.d"
   "/home/mathieu/Git/Progetto-Tetris/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 

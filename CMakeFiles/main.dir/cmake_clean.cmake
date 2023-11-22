@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/Quadrato.cpp.o"
+  "CMakeFiles/main.dir/Quadrato.cpp.o.d"
+  "CMakeFiles/main.dir/Tetramino.cpp.o"
+  "CMakeFiles/main.dir/Tetramino.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
   "main"

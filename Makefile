@@ -129,6 +129,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Quadrato.o: Quadrato.cpp.o
+.PHONY : Quadrato.o
+
+# target to build an object file
+Quadrato.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.o
+.PHONY : Quadrato.cpp.o
+
+Quadrato.i: Quadrato.cpp.i
+.PHONY : Quadrato.i
+
+# target to preprocess a source file
+Quadrato.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.i
+.PHONY : Quadrato.cpp.i
+
+Quadrato.s: Quadrato.cpp.s
+.PHONY : Quadrato.s
+
+# target to generate assembly for a file
+Quadrato.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.s
+.PHONY : Quadrato.cpp.s
+
+Tetramino.o: Tetramino.cpp.o
+.PHONY : Tetramino.o
+
+# target to build an object file
+Tetramino.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.o
+.PHONY : Tetramino.cpp.o
+
+Tetramino.i: Tetramino.cpp.i
+.PHONY : Tetramino.i
+
+# target to preprocess a source file
+Tetramino.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.i
+.PHONY : Tetramino.cpp.i
+
+Tetramino.s: Tetramino.cpp.s
+.PHONY : Tetramino.s
+
+# target to generate assembly for a file
+Tetramino.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.s
+.PHONY : Tetramino.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... Quadrato.o"
+	@echo "... Quadrato.i"
+	@echo "... Quadrato.s"
+	@echo "... Tetramino.o"
+	@echo "... Tetramino.i"
+	@echo "... Tetramino.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
