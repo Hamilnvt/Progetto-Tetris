@@ -1,41 +1,45 @@
 #include <iostream>
 #include <ncurses.h>
 
+#include "Griglia.hpp"
 #include "Quadrato.hpp"
 
 int main() {
+
+  initscr();
+  start_color();
+  noecho();
+  curs_set(0);
+  cbreak();
+  halfdelay(1);
+  keypad(stdscr, TRUE);
+
+  WINDOW *gameWin = newwin(GAME_WIN_HEIGHT, GAME_WIN_WIDTH, 0, 70);
+
+  Griglia griglia = Griglia(gameWin);
+
+  Quadrato q = Quadrato(gameWin, griglia);
+
+  int ch;
+  while ((ch = getch()) != KEY_F(1)) {
+
+    box(gameWin, 0, 0);
+    wrefresh(gameWin);
+
+    //q.Update(ch);
+    q.Display();
+
+    griglia.Update();
     
-    initscr();
-    start_color();
-    noecho();
-    curs_set(0);
-    cbreak();
-    halfdelay(1);
-    keypad(stdscr,TRUE);
+    if (q.HasReachedEnd) {
+      mvwprintw(gameWin, 1, 1, "Fine");
+      ch = KEY_F(1);
+    }
 
-    WINDOW *gameWin = newwin(GAME_WIN_HEIGHT,GAME_WIN_WIDTH,0,70);
-
-    Quadrato q = Quadrato(gameWin);
-
-    int ch;
-    while((ch = getch()) != KEY_F(1)) {
-        
-        box(gameWin,0,0);
-        wrefresh(gameWin);
-
-        q.Update(ch);
-        q.Display();
-
-
-        if(q.HasReachedEnd) {
-            mvwprintw(gameWin,1,1,"Fine");
-            // qui dividiamo il tetramino nei suoi blocchetti
-            // e creiamo il nuovo tetramino
-        }
-
-        refresh();
-    }   
-
-    endwin();
-    return 0;
+    wrefresh(gameWin);
+    refresh();
+  }
+  getch();
+  endwin();
+  return 0;
 }

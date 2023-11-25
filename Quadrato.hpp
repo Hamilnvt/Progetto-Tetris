@@ -2,13 +2,15 @@
 
 class Quadrato : public Tetramino {
     public:
-    Quadrato(WINDOW *gameWin);
+    Quadrato(WINDOW *gameWin, Griglia griglia);
     Quadrato();
 
     void Display();
     void Clear();
     void Update(int ch);
     void MoveDown();
-    void CheckBottomEdge();
-    void CheckLateralEdges();
+    void CheckCollision();
+
+    bool CheckLeftEdge();
+    bool CheckRightEdge();
 };

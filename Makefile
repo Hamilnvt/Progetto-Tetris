@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Griglia.o: Griglia.cpp.o
+.PHONY : Griglia.o
+
+# target to build an object file
+Griglia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.o
+.PHONY : Griglia.cpp.o
+
+Griglia.i: Griglia.cpp.i
+.PHONY : Griglia.i
+
+# target to preprocess a source file
+Griglia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.i
+.PHONY : Griglia.cpp.i
+
+Griglia.s: Griglia.cpp.s
+.PHONY : Griglia.s
+
+# target to generate assembly for a file
+Griglia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.s
+.PHONY : Griglia.cpp.s
+
 Quadrato.o: Quadrato.cpp.o
 .PHONY : Quadrato.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... Griglia.o"
+	@echo "... Griglia.i"
+	@echo "... Griglia.s"
 	@echo "... Quadrato.o"
 	@echo "... Quadrato.i"
 	@echo "... Quadrato.s"

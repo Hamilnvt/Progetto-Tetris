@@ -1,64 +1,74 @@
-#include "ncurses.h"
 #include "Quadrato.hpp"
+#include <ncurses.h>
 
-Quadrato::Quadrato(WINDOW *gameWin) {
-    this->gameWin = gameWin;
+Quadrato::Quadrato() {}
+
+Quadrato::Quadrato(WINDOW *gameWin, Griglia griglia) {
+  this->gameWin = gameWin;
+  this->griglia = griglia;
 }
 
-Quadrato::Quadrato() {
-
-}
-
-void Quadrato::Display() { 
-    mvwprintw(gameWin,y,x,"[]");
-    mvwprintw(gameWin,y,x+WIDTH,"[]");
-    mvwprintw(gameWin,y+HEIGHT,x,"[]");
-    mvwprintw(gameWin,y+HEIGHT,x+WIDTH,"[]");
-    wrefresh(gameWin);
-    refresh();
+void Quadrato::Display() {
+  griglia.g[y][x] = 1;
+  griglia.g[y][x + 2] = 1;
+  griglia.g[y + 1][x] = 1;
+  griglia.g[y + 1][x + 2] = 1;
+  refresh();
 }
 
 void Quadrato::Clear() {
-    mvwprintw(gameWin,y,x,"  ");
-    mvwprintw(gameWin,y,x+WIDTH,"  ");
-    mvwprintw(gameWin,y+HEIGHT,x,"  ");
-    mvwprintw(gameWin,y+HEIGHT,x+WIDTH,"  ");
-    wrefresh(gameWin);
-    refresh();
-}
-
-void Quadrato::CheckLateralEdges() {
-    if(x < 1) x = 1;
-    if(x + WIDTH > GAME_WIN_WIDTH - 3) x = GAME_WIN_WIDTH - 3 - WIDTH;
+  griglia.g[y][x] = 0;
+  griglia.g[y][x + 2] = 0;
+  griglia.g[y + 1][x] = 0;
+  griglia.g[y + 1][x + 2] = 0;
+  refresh();
 }
 
 void Quadrato::MoveDown() {
-    delay_output(SPEED);
-    Clear();
+  delay_output(SPEED);
+  Clear();
+  if (y < griglia.rows)
     y++;
+  else
+    HasReachedEnd = true;
 }
 
-void Quadrato::CheckBottomEdge() {
-    if (y + HEIGHT > GAME_WIN_HEIGHT - 3) {
-        y = GAME_WIN_WIDTH - 3 - HEIGHT;
-        HasReachedEnd = true;
-    } 
+void Quadrato::CheckCollision() {
+  if (griglia.g[y + 2][x] == 1 || griglia.g[y + 2][x + 2] == 1)
+    HasReachedEnd = true;
+}
+
+bool Quadrato::CheckLeftEdge() {
+  return (x < 1 || 
+          griglia.g[y][x - 2] == 1 || 
+          griglia.g[y + 1][x - 2] == 1);
+}
+
+bool Quadrato::CheckRightEdge() {
+  return(x > griglia.cols - 2 ||
+         griglia.g[y][x + 4] == 1 ||
+         griglia.g[y + 1][x + 4] == 1);
 }
 
 void Quadrato::Update(int ch) {
-	switch(ch)
-	{	case KEY_LEFT:
-			Clear();
-			x -= WIDTH;
-            Display();
-			break;
-		case KEY_RIGHT:
-            Clear();
-            x += WIDTH;
-            Display();
-			break;
-	}
-    CheckLateralEdges();
-    CheckBottomEdge();
-    MoveDown();
+  switch (ch) {
+  case KEY_LEFT:
+    if (CheckLeftEdge())
+      break;
+
+    Clear();
+    x -= 2 * 2;
+    Display();
+    break;
+  case KEY_RIGHT:
+    if (CheckRightEdge())
+      break;
+
+    Clear();
+    x += 2 * 2;
+    Display();
+    break;
+  }
+  CheckCollision();
+  MoveDown();
 }

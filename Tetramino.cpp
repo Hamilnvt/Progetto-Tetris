@@ -1,18 +1,13 @@
-#include <iostream>
 #include "Tetramino.hpp"
+#include <iostream>
 
-Tetramino::Tetramino() {
+Tetramino::Tetramino() {}
 
+Tetramino::Tetramino(WINDOW *gameWin, Griglia griglia) {
+  this->gameWin = gameWin;
+  this->griglia = griglia;
 }
 
-Tetramino::Tetramino(WINDOW *gameWin) {
-    this->gameWin = gameWin;
-}
+void Tetramino::Display() {}
 
-void Tetramino::Display() {
-
-}
-
-void Tetramino:: Update(int ch) {
-
-}
+void Tetramino::Update(int ch) {}
