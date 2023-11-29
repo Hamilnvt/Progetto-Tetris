@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mathieu/Git/Progetto-Tetris/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "//home/joel/Progetti/Git/Progetto-Tetris/Window.cpp" "CMakeFiles/main.dir/Window.cpp.o" "gcc" "CMakeFiles/main.dir/Window.cpp.o.d"
+  "//home/joel/Progetti/Git/Progetto-Tetris/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

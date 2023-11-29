@@ -5,5 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package( Curses REQUIRED )
 include_directories( ${CURSES_INCLUDE_DIR} )
-add_executable(main main.cpp)
+set(CMAKE_CXX_FLAGS "-lncurses")
+add_executable(main main.cpp Window.cpp Window.h)
 target_link_libraries( main ${CURSES_LIBRARIES} )

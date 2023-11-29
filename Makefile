@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mathieu/Git/Progetto-Tetris
+CMAKE_SOURCE_DIR = //home/joel/Progetti/Git/Progetto-Tetris
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mathieu/Git/Progetto-Tetris
+CMAKE_BINARY_DIR = /home/joel/Progetti/Git/Progetto-Tetris
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathieu/Git/Progetto-Tetris/CMakeFiles /home/mathieu/Git/Progetto-Tetris//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/Progetti/Git/Progetto-Tetris/CMakeFiles /home/joel/Progetti/Git/Progetto-Tetris//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathieu/Git/Progetto-Tetris/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joel/Progetti/Git/Progetto-Tetris/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Window.o: Window.cpp.o
+.PHONY : Window.o
+
+# target to build an object file
+Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Window.cpp.o
+.PHONY : Window.cpp.o
+
+Window.i: Window.cpp.i
+.PHONY : Window.i
+
+# target to preprocess a source file
+Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Window.cpp.i
+.PHONY : Window.cpp.i
+
+Window.s: Window.cpp.s
+.PHONY : Window.s
+
+# target to generate assembly for a file
+Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Window.cpp.s
+.PHONY : Window.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... Window.o"
+	@echo "... Window.i"
+	@echo "... Window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

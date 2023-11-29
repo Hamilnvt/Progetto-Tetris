@@ -1,0 +1,86 @@
+#include <iostream>
+#include <ncurses.h>
+#include <cstring>
+using namespace std;
+
+int Calculate_Witdh(int c, int n)
+{
+    int i=1;
+    n--;
+    while(c/i != n) //alla prima divisione tra il n. di colonne ed i che arrotondata per difetto fa 4, la ripetizione si ferma
+                    //c/i = 4.9999999 -> 4. 
+    {
+        i++;
+    }
+    return i;
+}
+
+
+int main()
+{	
+    int y=0, x=0;
+
+    initscr();
+    int wcolumns, wrows;
+    getmaxyx(stdscr, wrows, wcolumns);
+    refresh();
+    //variabili della finestra Title.
+    int theight, twidth;
+    
+    if(wcolumns%5!=0)
+        twidth = Calculate_Witdh(wcolumns, 5) * 3;
+    else
+        twidth = wcolumns/5 * 3;
+    
+    theight = wrows/3;
+    
+    WINDOW *title = newwin(theight, twidth, 0, wcolumns/5); //height, width, starty, startx
+    move(0, wcolumns/5);
+    getyx(stdscr, y, x);
+    box(title, 0, 0);    
+    wrefresh(title);
+     
+    ////////////////
+    
+    //variabili della finestra Menu.
+    int mheight, mwidth;
+    mheight = theight * 2;
+    
+
+    if(twidth%4!=0)
+        mwidth = Calculate_Witdh(twidth, 4);
+    else
+        mwidth = twidth/4 * 2;
+    WINDOW *menu = newwin(mheight, mwidth, y+theight, x + mwidth/2); //height, width, starty, startx
+    move(y+theight, x + mwidth/2);
+    getyx(stdscr, y, x);
+    //box(menu, 0, 0);
+    wrefresh(menu);
+   
+    
+    
+    int stdheight, stdwidth = mwidth;
+    stdheight = mheight/3-2;
+
+    WINDOW *start = newwin(stdheight, stdwidth, y+4, x);
+    move(y+4, x);
+    getyx(stdscr, y, x);
+    box(start, 0, 0);
+    wrefresh(start);
+    
+    WINDOW *ratinglist = newwin(stdheight, stdwidth, y + stdheight , x);
+    move(y + stdheight, x);
+    getyx(stdscr, y, x);
+    box(ratinglist, 0, 0);
+    wrefresh(ratinglist);
+
+    WINDOW *exit = newwin(stdheight, stdwidth, y + stdheight, x);
+    move(y + stdheight, x);
+    getyx(stdscr, y, x);
+    box(exit, 0, 0);
+    wrefresh(exit);
+
+    getch();
+    endwin();
+    return 0;
+}
