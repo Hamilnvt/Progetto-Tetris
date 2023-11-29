@@ -24,15 +24,6 @@ void Quadrato::Clear() {
   refresh();
 }
 
-void Quadrato::MoveDown() {
-  delay_output(SPEED);
-  Clear();
-  if (y < griglia->rows - 2)
-    y++;
-  else
-    HasReachedEnd = true;
-}
-
 void Quadrato::CheckCollision() {
   if (griglia->g[y + 3][x] == 1 || griglia->g[y + 3][x + 2] == 1)
     HasReachedEnd = true;
@@ -45,10 +36,6 @@ bool Quadrato::CheckLeftEdge() {
 bool Quadrato::CheckRightEdge() {
   return (x > griglia->cols - 6 || griglia->g[y][x + 4] == 1 ||
           griglia->g[y + 1][x + 4] == 1);
-}
-
-bool Quadrato::isGameOver() {
-  return (HasReachedEnd && y < 3);
 }
 
 void Quadrato::Update(int ch) {
@@ -71,5 +58,5 @@ void Quadrato::Update(int ch) {
     break;
   }
   CheckCollision();
-  MoveDown();
+  MoveDown(2);
 }

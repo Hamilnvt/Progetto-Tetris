@@ -34,9 +34,8 @@ bool Griglia::isRowFull(int row) {
   bool full = true;
   int j = 0;
   while (j < cols && full) {
-    mvprintw(2,180,"%i",g[row][j]);
     if (g[row][j] == 0) full = false;
-    else j++;
+    else j+=2;
   }
   return full;
 }
@@ -44,14 +43,14 @@ bool Griglia::isRowFull(int row) {
 void Griglia::MoveRowsDown(int deleted_row) {
   delay_output(50);
   for (int i = deleted_row; i > 0; i--) {
-    for (int j = 0; j < cols; j++) {
+    for (int j = 0; j < cols; j+=2) {
       g[i][j] = g[i-1][j];
     }
   }
 }
 
 void Griglia::DeleteRow(int row) {
-  for (int j = 0; j < cols; j++) g[row][j] = 0;
+  for (int j = 0; j < cols; j+=2) g[row][j] = 0;
   // calcolo punti...
   MoveRowsDown(row);
 }

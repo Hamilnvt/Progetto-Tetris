@@ -44,6 +44,51 @@ CMakeFiles/main.dir/Griglia.cpp.o: Griglia.cpp \
   /usr/include/unctrl.h \
   /usr/include/curses.h
 
+CMakeFiles/main.dir/Linea.cpp.o: Linea.cpp \
+  /usr/include/stdc-predef.h \
+  Linea.hpp \
+  Tetramino.hpp \
+  /usr/include/curses.h \
+  /usr/include/ncurses_dll.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/unctrl.h \
+  /usr/include/curses.h \
+  Griglia.hpp
+
 CMakeFiles/main.dir/Quadrato.cpp.o: Quadrato.cpp \
   /usr/include/stdc-predef.h \
   Quadrato.hpp \
@@ -466,9 +511,10 @@ CMakeFiles/main.dir/main.cpp.o: main.cpp \
   /usr/include/ncurses_dll.h \
   /usr/include/unctrl.h \
   /usr/include/curses.h \
+  Tetramino.hpp \
   Griglia.hpp \
   Quadrato.hpp \
-  Tetramino.hpp
+  Linea.hpp
 
 
 /usr/include/c++/12/bits/basic_ios.tcc:
@@ -551,6 +597,12 @@ CMakeFiles/main.dir/main.cpp.o: main.cpp \
 
 /usr/include/c++/12/bits/stl_function.h:
 
+/usr/include/c++/12/bits/ptr_traits.h:
+
+/usr/include/c++/12/bits/basic_string.h:
+
+/usr/include/c++/12/ext/type_traits.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/12/bits/stringfwd.h:
@@ -575,11 +627,11 @@ CMakeFiles/main.dir/main.cpp.o: main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h:
 
+Linea.hpp:
+
 Quadrato.hpp:
 
 Tetramino.cpp:
-
-/usr/include/c++/12/bits/ptr_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -617,12 +669,6 @@ Quadrato.cpp:
 
 /usr/include/curses.h:
 
-/usr/include/c++/12/bits/locale_classes.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/12/bits/exception.h:
-
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -630,10 +676,6 @@ Quadrato.cpp:
 /usr/include/asm-generic/errno-base.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
-
-/usr/include/c++/12/bits/basic_string.h:
-
-/usr/include/c++/12/ext/type_traits.h:
 
 /usr/include/c++/12/bits/ios_base.h:
 
@@ -659,6 +701,12 @@ Griglia.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/usr/include/c++/12/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/12/bits/exception.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -666,12 +714,6 @@ Griglia.hpp:
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/12/exception:
-
-/usr/include/c++/12/bits/std_abs.h:
-
-/usr/include/c++/12/debug/assertions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -719,9 +761,17 @@ Griglia.hpp:
 
 /usr/include/ncurses_dll.h:
 
+Linea.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/12/exception:
+
+/usr/include/c++/12/bits/std_abs.h:
+
+/usr/include/c++/12/debug/assertions.h:
 
 /usr/include/c++/12/bits/exception_defines.h:
 
@@ -739,9 +789,9 @@ Griglia.hpp:
 
 /usr/include/c++/12/bits/nested_exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h:
 

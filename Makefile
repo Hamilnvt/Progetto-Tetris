@@ -153,6 +153,30 @@ Griglia.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.s
 .PHONY : Griglia.cpp.s
 
+Linea.o: Linea.cpp.o
+.PHONY : Linea.o
+
+# target to build an object file
+Linea.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.o
+.PHONY : Linea.cpp.o
+
+Linea.i: Linea.cpp.i
+.PHONY : Linea.i
+
+# target to preprocess a source file
+Linea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.i
+.PHONY : Linea.cpp.i
+
+Linea.s: Linea.cpp.s
+.PHONY : Linea.s
+
+# target to generate assembly for a file
+Linea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.s
+.PHONY : Linea.cpp.s
+
 Quadrato.o: Quadrato.cpp.o
 .PHONY : Quadrato.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... Griglia.o"
 	@echo "... Griglia.i"
 	@echo "... Griglia.s"
+	@echo "... Linea.o"
+	@echo "... Linea.i"
+	@echo "... Linea.s"
 	@echo "... Quadrato.o"
 	@echo "... Quadrato.i"
 	@echo "... Quadrato.s"

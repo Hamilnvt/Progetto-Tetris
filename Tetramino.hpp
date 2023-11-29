@@ -1,3 +1,5 @@
+#pragma once
+
 #include "ncurses.h"
 #include "Griglia.hpp"
 
@@ -25,6 +27,9 @@ class Tetramino {
     Tetramino();
     Tetramino(WINDOW *gameWin, Griglia *griglia);
 
-    void Update(int ch);
-    void Display();
+    virtual void Clear();
+    bool isGameOver();
+    virtual void Update(int ch);
+    virtual void Display();
+    void MoveDown(int n);
 };

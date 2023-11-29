@@ -1,9 +1,12 @@
 #include "Tetramino.hpp"
 
-class Quadrato : public Tetramino {
+class Linea : public Tetramino {
     public:
-    Quadrato(WINDOW *gameWin, Griglia *griglia);
-    Quadrato();
+
+    bool isRotated = false;
+
+    Linea();
+    Linea(WINDOW *gameWin, Griglia *griglia);
 
     void Display();
     void Clear();
@@ -12,4 +15,7 @@ class Quadrato : public Tetramino {
 
     bool CheckLeftEdge();
     bool CheckRightEdge();
+    bool cantRotate();
+
+    void Rotate();
 };
