@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Griglia.cpp.o CMakeFiles/main.dir/Tetramino.cpp.o CMakeFiles/main.dir/Quadrato.cpp.o -o main  -lcurses -lform 
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Griglia.cpp.o CMakeFiles/main.dir/Tetramino.cpp.o CMakeFiles/main.dir/Quadrato.cpp.o -o main  -lcurses -lform
