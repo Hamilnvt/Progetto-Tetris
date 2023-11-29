@@ -2,11 +2,8 @@
 
 #include <ncurses.h>
 
-#define GAME_WIN_HEIGHT 40
-#define GAME_WIN_WIDTH 60
-
-#define G_ROWS 39
-#define G_COLS 59
+#define G_ROWS 42
+#define G_COLS 60
 
 class Griglia {
   public:
@@ -19,6 +16,12 @@ class Griglia {
   Griglia();
 
   void Update();
-  
+  void SetState(int y, int x, int s);
+
+  bool isRowFull(int row);
   void DeleteRow(int row);
+  void MoveRowsDown(int deleted_row);
+  void ControlRows();
+
+  void StampaGriglia();
 };

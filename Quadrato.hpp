@@ -2,7 +2,7 @@
 
 class Quadrato : public Tetramino {
     public:
-    Quadrato(WINDOW *gameWin, Griglia griglia);
+    Quadrato(WINDOW *gameWin, Griglia *griglia);
     Quadrato();
 
     void Display();
@@ -13,4 +13,5 @@ class Quadrato : public Tetramino {
 
     bool CheckLeftEdge();
     bool CheckRightEdge();
+    bool isGameOver();
 };

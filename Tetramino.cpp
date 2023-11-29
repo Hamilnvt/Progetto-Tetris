@@ -3,7 +3,7 @@
 
 Tetramino::Tetramino() {}
 
-Tetramino::Tetramino(WINDOW *gameWin, Griglia griglia) {
+Tetramino::Tetramino(WINDOW *gameWin, Griglia *griglia) {
   this->gameWin = gameWin;
   this->griglia = griglia;
 }
