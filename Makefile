@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named Tetris
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+Tetris: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tetris
+.PHONY : Tetris
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+Tetris/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/build
+.PHONY : Tetris/fast
+
+Giuoco.o: Giuoco.cpp.o
+.PHONY : Giuoco.o
+
+# target to build an object file
+Giuoco.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Giuoco.cpp.o
+.PHONY : Giuoco.cpp.o
+
+Giuoco.i: Giuoco.cpp.i
+.PHONY : Giuoco.i
+
+# target to preprocess a source file
+Giuoco.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Giuoco.cpp.i
+.PHONY : Giuoco.cpp.i
+
+Giuoco.s: Giuoco.cpp.s
+.PHONY : Giuoco.s
+
+# target to generate assembly for a file
+Giuoco.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Giuoco.cpp.s
+.PHONY : Giuoco.cpp.s
 
 Griglia.o: Griglia.cpp.o
 .PHONY : Griglia.o
 
 # target to build an object file
 Griglia.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Griglia.cpp.o
 .PHONY : Griglia.cpp.o
 
 Griglia.i: Griglia.cpp.i
@@ -142,7 +166,7 @@ Griglia.i: Griglia.cpp.i
 
 # target to preprocess a source file
 Griglia.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Griglia.cpp.i
 .PHONY : Griglia.cpp.i
 
 Griglia.s: Griglia.cpp.s
@@ -150,7 +174,7 @@ Griglia.s: Griglia.cpp.s
 
 # target to generate assembly for a file
 Griglia.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Griglia.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Griglia.cpp.s
 .PHONY : Griglia.cpp.s
 
 Linea.o: Linea.cpp.o
@@ -158,7 +182,7 @@ Linea.o: Linea.cpp.o
 
 # target to build an object file
 Linea.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Linea.cpp.o
 .PHONY : Linea.cpp.o
 
 Linea.i: Linea.cpp.i
@@ -166,7 +190,7 @@ Linea.i: Linea.cpp.i
 
 # target to preprocess a source file
 Linea.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Linea.cpp.i
 .PHONY : Linea.cpp.i
 
 Linea.s: Linea.cpp.s
@@ -174,7 +198,7 @@ Linea.s: Linea.cpp.s
 
 # target to generate assembly for a file
 Linea.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linea.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Linea.cpp.s
 .PHONY : Linea.cpp.s
 
 Quadrato.o: Quadrato.cpp.o
@@ -182,7 +206,7 @@ Quadrato.o: Quadrato.cpp.o
 
 # target to build an object file
 Quadrato.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Quadrato.cpp.o
 .PHONY : Quadrato.cpp.o
 
 Quadrato.i: Quadrato.cpp.i
@@ -190,7 +214,7 @@ Quadrato.i: Quadrato.cpp.i
 
 # target to preprocess a source file
 Quadrato.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Quadrato.cpp.i
 .PHONY : Quadrato.cpp.i
 
 Quadrato.s: Quadrato.cpp.s
@@ -198,7 +222,7 @@ Quadrato.s: Quadrato.cpp.s
 
 # target to generate assembly for a file
 Quadrato.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Quadrato.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Quadrato.cpp.s
 .PHONY : Quadrato.cpp.s
 
 Tetramino.o: Tetramino.cpp.o
@@ -206,7 +230,7 @@ Tetramino.o: Tetramino.cpp.o
 
 # target to build an object file
 Tetramino.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetramino.cpp.o
 .PHONY : Tetramino.cpp.o
 
 Tetramino.i: Tetramino.cpp.i
@@ -214,7 +238,7 @@ Tetramino.i: Tetramino.cpp.i
 
 # target to preprocess a source file
 Tetramino.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetramino.cpp.i
 .PHONY : Tetramino.cpp.i
 
 Tetramino.s: Tetramino.cpp.s
@@ -222,15 +246,87 @@ Tetramino.s: Tetramino.cpp.s
 
 # target to generate assembly for a file
 Tetramino.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Tetramino.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Tetramino.cpp.s
 .PHONY : Tetramino.cpp.s
+
+Title.o: Title.cpp.o
+.PHONY : Title.o
+
+# target to build an object file
+Title.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Title.cpp.o
+.PHONY : Title.cpp.o
+
+Title.i: Title.cpp.i
+.PHONY : Title.i
+
+# target to preprocess a source file
+Title.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Title.cpp.i
+.PHONY : Title.cpp.i
+
+Title.s: Title.cpp.s
+.PHONY : Title.s
+
+# target to generate assembly for a file
+Title.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Title.cpp.s
+.PHONY : Title.cpp.s
+
+Window.o: Window.cpp.o
+.PHONY : Window.o
+
+# target to build an object file
+Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Window.cpp.o
+.PHONY : Window.cpp.o
+
+Window.i: Window.cpp.i
+.PHONY : Window.i
+
+# target to preprocess a source file
+Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Window.cpp.i
+.PHONY : Window.cpp.i
+
+Window.s: Window.cpp.s
+.PHONY : Window.s
+
+# target to generate assembly for a file
+Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/Window.cpp.s
+.PHONY : Window.cpp.s
+
+classifica.o: classifica.cpp.o
+.PHONY : classifica.o
+
+# target to build an object file
+classifica.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/classifica.cpp.o
+.PHONY : classifica.cpp.o
+
+classifica.i: classifica.cpp.i
+.PHONY : classifica.i
+
+# target to preprocess a source file
+classifica.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/classifica.cpp.i
+.PHONY : classifica.cpp.i
+
+classifica.s: classifica.cpp.s
+.PHONY : classifica.s
+
+# target to generate assembly for a file
+classifica.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/classifica.cpp.s
+.PHONY : classifica.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -238,7 +334,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -246,7 +342,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tetris.dir/build.make CMakeFiles/Tetris.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -257,7 +353,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
+	@echo "... Tetris"
+	@echo "... Giuoco.o"
+	@echo "... Giuoco.i"
+	@echo "... Giuoco.s"
 	@echo "... Griglia.o"
 	@echo "... Griglia.i"
 	@echo "... Griglia.s"
@@ -270,6 +369,15 @@ help:
 	@echo "... Tetramino.o"
 	@echo "... Tetramino.i"
 	@echo "... Tetramino.s"
+	@echo "... Title.o"
+	@echo "... Title.i"
+	@echo "... Title.s"
+	@echo "... Window.o"
+	@echo "... Window.i"
+	@echo "... Window.s"
+	@echo "... classifica.o"
+	@echo "... classifica.i"
+	@echo "... classifica.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

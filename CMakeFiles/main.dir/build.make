@@ -83,10 +83,52 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
+CMakeFiles/main.dir/Window.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Window.cpp.o: Window.cpp
+CMakeFiles/main.dir/Window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Window.cpp.o -MF CMakeFiles/main.dir/Window.cpp.o.d -o CMakeFiles/main.dir/Window.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Window.cpp
+
+CMakeFiles/main.dir/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mathieu/Git/Progetto-Tetris/Window.cpp > CMakeFiles/main.dir/Window.cpp.i
+
+CMakeFiles/main.dir/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/Window.cpp -o CMakeFiles/main.dir/Window.cpp.s
+
+CMakeFiles/main.dir/Title.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Title.cpp.o: Title.cpp
+CMakeFiles/main.dir/Title.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Title.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Title.cpp.o -MF CMakeFiles/main.dir/Title.cpp.o.d -o CMakeFiles/main.dir/Title.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Title.cpp
+
+CMakeFiles/main.dir/Title.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Title.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mathieu/Git/Progetto-Tetris/Title.cpp > CMakeFiles/main.dir/Title.cpp.i
+
+CMakeFiles/main.dir/Title.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Title.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/Title.cpp -o CMakeFiles/main.dir/Title.cpp.s
+
+CMakeFiles/main.dir/Giuoco.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Giuoco.cpp.o: Giuoco.cpp
+CMakeFiles/main.dir/Giuoco.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Giuoco.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Giuoco.cpp.o -MF CMakeFiles/main.dir/Giuoco.cpp.o.d -o CMakeFiles/main.dir/Giuoco.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Giuoco.cpp
+
+CMakeFiles/main.dir/Giuoco.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Giuoco.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mathieu/Git/Progetto-Tetris/Giuoco.cpp > CMakeFiles/main.dir/Giuoco.cpp.i
+
+CMakeFiles/main.dir/Giuoco.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Giuoco.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/Giuoco.cpp -o CMakeFiles/main.dir/Giuoco.cpp.s
+
 CMakeFiles/main.dir/Griglia.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Griglia.cpp.o: Griglia.cpp
 CMakeFiles/main.dir/Griglia.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Griglia.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/Griglia.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Griglia.cpp.o -MF CMakeFiles/main.dir/Griglia.cpp.o.d -o CMakeFiles/main.dir/Griglia.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Griglia.cpp
 
 CMakeFiles/main.dir/Griglia.cpp.i: cmake_force
@@ -100,7 +142,7 @@ CMakeFiles/main.dir/Griglia.cpp.s: cmake_force
 CMakeFiles/main.dir/Tetramino.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Tetramino.cpp.o: Tetramino.cpp
 CMakeFiles/main.dir/Tetramino.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/Tetramino.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/Tetramino.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Tetramino.cpp.o -MF CMakeFiles/main.dir/Tetramino.cpp.o.d -o CMakeFiles/main.dir/Tetramino.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Tetramino.cpp
 
 CMakeFiles/main.dir/Tetramino.cpp.i: cmake_force
@@ -114,7 +156,7 @@ CMakeFiles/main.dir/Tetramino.cpp.s: cmake_force
 CMakeFiles/main.dir/Quadrato.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Quadrato.cpp.o: Quadrato.cpp
 CMakeFiles/main.dir/Quadrato.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Quadrato.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/Quadrato.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Quadrato.cpp.o -MF CMakeFiles/main.dir/Quadrato.cpp.o.d -o CMakeFiles/main.dir/Quadrato.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Quadrato.cpp
 
 CMakeFiles/main.dir/Quadrato.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/main.dir/Quadrato.cpp.s: cmake_force
 CMakeFiles/main.dir/Linea.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/Linea.cpp.o: Linea.cpp
 CMakeFiles/main.dir/Linea.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/Linea.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/Linea.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Linea.cpp.o -MF CMakeFiles/main.dir/Linea.cpp.o.d -o CMakeFiles/main.dir/Linea.cpp.o -c /home/mathieu/Git/Progetto-Tetris/Linea.cpp
 
 CMakeFiles/main.dir/Linea.cpp.i: cmake_force
@@ -139,27 +181,49 @@ CMakeFiles/main.dir/Linea.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Linea.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/Linea.cpp -o CMakeFiles/main.dir/Linea.cpp.s
 
+CMakeFiles/main.dir/classifica.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/classifica.cpp.o: classifica.cpp
+CMakeFiles/main.dir/classifica.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/classifica.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/classifica.cpp.o -MF CMakeFiles/main.dir/classifica.cpp.o.d -o CMakeFiles/main.dir/classifica.cpp.o -c /home/mathieu/Git/Progetto-Tetris/classifica.cpp
+
+CMakeFiles/main.dir/classifica.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/classifica.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mathieu/Git/Progetto-Tetris/classifica.cpp > CMakeFiles/main.dir/classifica.cpp.i
+
+CMakeFiles/main.dir/classifica.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/classifica.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mathieu/Git/Progetto-Tetris/classifica.cpp -o CMakeFiles/main.dir/classifica.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/Window.cpp.o" \
+"CMakeFiles/main.dir/Title.cpp.o" \
+"CMakeFiles/main.dir/Giuoco.cpp.o" \
 "CMakeFiles/main.dir/Griglia.cpp.o" \
 "CMakeFiles/main.dir/Tetramino.cpp.o" \
 "CMakeFiles/main.dir/Quadrato.cpp.o" \
-"CMakeFiles/main.dir/Linea.cpp.o"
+"CMakeFiles/main.dir/Linea.cpp.o" \
+"CMakeFiles/main.dir/classifica.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
+main: CMakeFiles/main.dir/Window.cpp.o
+main: CMakeFiles/main.dir/Title.cpp.o
+main: CMakeFiles/main.dir/Giuoco.cpp.o
 main: CMakeFiles/main.dir/Griglia.cpp.o
 main: CMakeFiles/main.dir/Tetramino.cpp.o
 main: CMakeFiles/main.dir/Quadrato.cpp.o
 main: CMakeFiles/main.dir/Linea.cpp.o
+main: CMakeFiles/main.dir/classifica.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib/x86_64-linux-gnu/libcurses.so
 main: /usr/lib/x86_64-linux-gnu/libform.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mathieu/Git/Progetto-Tetris/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

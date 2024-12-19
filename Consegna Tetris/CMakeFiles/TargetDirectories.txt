@@ -1,0 +1,3 @@
+/home/mathieu/Git/Progetto-Tetris/Consegna Tetris/CMakeFiles/Tetris.dir
+/home/mathieu/Git/Progetto-Tetris/Consegna Tetris/CMakeFiles/edit_cache.dir
+/home/mathieu/Git/Progetto-Tetris/Consegna Tetris/CMakeFiles/rebuild_cache.dir
