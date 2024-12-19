@@ -1,0 +1,45 @@
+* [33mcommit 84a20bd85e0eac442eb66855415eaedeeb82356d[m[33m ([m[1;36mHEAD -> [m[1;32mTetramino[m[33m)[m
+[31m|[m Author: Mathieu Linty <mathieu.linty@studio.unibo.it>
+[31m|[m Date:   Wed Nov 22 09:29:32 2023 +0100
+[31m|[m 
+[31m|[m     add: classe Tetramino, sottoclasse Quadrato. \nfeat: il quadrato si muove, rimane nella finestra di gioco e quando arriva alla fine si ferma.
+[31m|[m   
+[31m|[m * [33mcommit 17f06c7afbbe6ae8ef6bb3daa10ad40086ffee69[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+[31m|[m[31m/[m  Author: Mathieu Linty <mathieu.linty@studio.unibo.it>
+[31m|[m   Date:   Sat Nov 18 12:22:11 2023 +0100
+[31m|[m   
+[31m|[m       Prebranching
+[31m|[m 
+* [33mcommit 5631a095d0b9cb8ad3745827c37f040cae80efd9[m
+[32m|[m Author: Mathieu Linty <128990425+Hamilnvt@users.noreply.github.com>
+[32m|[m Date:   Sat Nov 18 11:29:31 2023 +0100
+[32m|[m 
+[32m|[m     Delete CMakeCache.txt
+[32m|[m 
+* [33mcommit b3642e0d75791cdc0c28faef9abb5d255c10229c[m
+[32m|[m Author: Mathieu Linty <128990425+Hamilnvt@users.noreply.github.com>
+[32m|[m Date:   Sat Nov 18 11:27:27 2023 +0100
+[32m|[m 
+[32m|[m     Update .gitignore
+[32m|[m     
+[32m|[m     add: CMakeCache.txt
+[32m|[m 
+* [33mcommit 931825aa1d1ab0afaf80c2925374d6add8fbc3fb[m
+[32m|[m Author: Mathieu Linty <mathieu.linty@studio.unibo.it>
+[32m|[m Date:   Sat Nov 18 11:13:34 2023 +0100
+[32m|[m 
+[32m|[m     add: CMakeFile e main.cpp
+[32m|[m 
+* [33mcommit e18fd0b7ebc77cbd07e7143c6e8765f7cd4cd6af[m
+[32m|[m Author: Mathieu Linty <128990425+Hamilnvt@users.noreply.github.com>
+[32m|[m Date:   Sat Nov 18 10:00:05 2023 +0100
+[32m|[m 
+[32m|[m     Update .gitignore
+[32m|[m     
+[32m|[m     Aggiunto l'eseguibile main
+[32m|[m 
+* [33mcommit 60cccd1e04ed83b7de1b508639635504ec0c3c7b[m
+  Author: Mathieu Linty <128990425+Hamilnvt@users.noreply.github.com>
+  Date:   Sat Nov 18 09:56:57 2023 +0100
+  
+      Initial commit
